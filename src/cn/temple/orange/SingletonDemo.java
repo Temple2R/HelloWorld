@@ -26,7 +26,7 @@ class Singleton01{
 }
 /**优化版的懒汉单例*/
 class Singleton02{
-	public Singleton02() {
+	private Singleton02() {
 	}
 	private static volatile Singleton02 instance=null;
 	public static Singleton02 getInstance(){
